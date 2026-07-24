@@ -301,6 +301,7 @@ MonoBehaviour:
   position: 1
   velocity: 1
   animationState: 0
+  id: 0
 --- !u!1 &379067398
 GameObject:
   m_ObjectHideFlags: 0
@@ -483,6 +484,7 @@ MonoBehaviour:
   position: 1
   velocity: 1
   animationState: 0
+  id: 0
 --- !u!1 &415557564
 GameObject:
   m_ObjectHideFlags: 0
@@ -665,6 +667,7 @@ MonoBehaviour:
   position: 1
   velocity: 1
   animationState: 0
+  id: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -913,6 +916,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   movementSpeed: 5
   jumpForce: 5
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 1
 --- !u!50 &575384068
 Rigidbody2D:
   serializedVersion: 5
@@ -1013,6 +1019,7 @@ MonoBehaviour:
   position: 1
   velocity: 1
   animationState: 0
+  id: 0
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -1279,6 +1286,7 @@ MonoBehaviour:
   position: 1
   velocity: 1
   animationState: 0
+  id: 0
 --- !u!1 &855276580
 GameObject:
   m_ObjectHideFlags: 0
@@ -1461,6 +1469,7 @@ MonoBehaviour:
   position: 1
   velocity: 1
   animationState: 0
+  id: 0
 --- !u!1 &1117100774
 GameObject:
   m_ObjectHideFlags: 0
@@ -1643,6 +1652,7 @@ MonoBehaviour:
   position: 1
   velocity: 1
   animationState: 0
+  id: 0
 --- !u!1 &1223567659
 GameObject:
   m_ObjectHideFlags: 0
@@ -1963,6 +1973,7 @@ MonoBehaviour:
   position: 1
   velocity: 1
   animationState: 0
+  id: 0
 --- !u!1 &1295959198
 GameObject:
   m_ObjectHideFlags: 0
@@ -1992,6 +2003,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2fd9cb6206974d17a61c54ca240c9b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItsRewindTime
+  rewindMetre: 1
   maxRewindTime: 30
   rewindSpeed: 4
 --- !u!4 &1295959200
@@ -2191,6 +2203,7 @@ MonoBehaviour:
   position: 1
   velocity: 1
   animationState: 0
+  id: 0
 --- !u!1 &1507897236
 GameObject:
   m_ObjectHideFlags: 0
@@ -2373,6 +2386,7 @@ MonoBehaviour:
   position: 1
   velocity: 1
   animationState: 0
+  id: 0
 --- !u!1 &1713786347
 GameObject:
   m_ObjectHideFlags: 0
@@ -2555,6 +2569,7 @@ MonoBehaviour:
   position: 1
   velocity: 1
   animationState: 0
+  id: 0
 --- !u!1 &1785545683
 GameObject:
   m_ObjectHideFlags: 0

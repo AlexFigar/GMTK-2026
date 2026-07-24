@@ -66,7 +66,7 @@ public class ItsRewindTime : MonoBehaviour
     {
         foreach (var item in rewindables)
         {
-
+            var data = item.Value.GetRewindData();
         }
     }
 
