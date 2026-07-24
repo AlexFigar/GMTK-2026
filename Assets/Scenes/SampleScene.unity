@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 308788443}
   - component: {fileID: 308788442}
   - component: {fileID: 308788445}
+  - component: {fileID: 308788446}
   m_Layer: 0
   m_Name: Crate
   m_TagString: Untagged
@@ -285,6 +286,21 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &308788446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 308788441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d41019d54dc56c48097076c7c4a5b236, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Rewindable
+  position: 1
+  velocity: 1
+  animationState: 0
 --- !u!1 &379067398
 GameObject:
   m_ObjectHideFlags: 0
@@ -297,6 +313,7 @@ GameObject:
   - component: {fileID: 379067401}
   - component: {fileID: 379067400}
   - component: {fileID: 379067399}
+  - component: {fileID: 379067403}
   m_Layer: 0
   m_Name: Crate (9)
   m_TagString: Untagged
@@ -451,6 +468,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &379067403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 379067398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d41019d54dc56c48097076c7c4a5b236, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Rewindable
+  position: 1
+  velocity: 1
+  animationState: 0
 --- !u!1 &415557564
 GameObject:
   m_ObjectHideFlags: 0
@@ -463,6 +495,7 @@ GameObject:
   - component: {fileID: 415557567}
   - component: {fileID: 415557566}
   - component: {fileID: 415557565}
+  - component: {fileID: 415557569}
   m_Layer: 0
   m_Name: Crate (5)
   m_TagString: Untagged
@@ -617,6 +650,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &415557569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 415557564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d41019d54dc56c48097076c7c4a5b236, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Rewindable
+  position: 1
+  velocity: 1
+  animationState: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -768,6 +816,7 @@ GameObject:
   - component: {fileID: 575384069}
   - component: {fileID: 575384066}
   - component: {fileID: 575384070}
+  - component: {fileID: 575384071}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -949,6 +998,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05247b60751c393809c0fa9533cc4dab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerInput
+--- !u!114 &575384071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 575384063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d41019d54dc56c48097076c7c4a5b236, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Rewindable
+  position: 1
+  velocity: 1
+  animationState: 0
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -1045,6 +1109,7 @@ GameObject:
   - component: {fileID: 789638718}
   - component: {fileID: 789638717}
   - component: {fileID: 789638716}
+  - component: {fileID: 789638720}
   m_Layer: 0
   m_Name: Crate (4)
   m_TagString: Untagged
@@ -1199,6 +1264,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &789638720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789638715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d41019d54dc56c48097076c7c4a5b236, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Rewindable
+  position: 1
+  velocity: 1
+  animationState: 0
 --- !u!1 &855276580
 GameObject:
   m_ObjectHideFlags: 0
@@ -1211,6 +1291,7 @@ GameObject:
   - component: {fileID: 855276583}
   - component: {fileID: 855276582}
   - component: {fileID: 855276581}
+  - component: {fileID: 855276585}
   m_Layer: 0
   m_Name: Crate (7)
   m_TagString: Untagged
@@ -1365,6 +1446,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &855276585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 855276580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d41019d54dc56c48097076c7c4a5b236, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Rewindable
+  position: 1
+  velocity: 1
+  animationState: 0
 --- !u!1 &1117100774
 GameObject:
   m_ObjectHideFlags: 0
@@ -1377,6 +1473,7 @@ GameObject:
   - component: {fileID: 1117100777}
   - component: {fileID: 1117100776}
   - component: {fileID: 1117100775}
+  - component: {fileID: 1117100779}
   m_Layer: 0
   m_Name: Crate (1)
   m_TagString: Untagged
@@ -1531,6 +1628,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1117100779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1117100774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d41019d54dc56c48097076c7c4a5b236, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Rewindable
+  position: 1
+  velocity: 1
+  animationState: 0
 --- !u!1 &1223567659
 GameObject:
   m_ObjectHideFlags: 0
@@ -1681,6 +1793,7 @@ GameObject:
   - component: {fileID: 1240470014}
   - component: {fileID: 1240470013}
   - component: {fileID: 1240470012}
+  - component: {fileID: 1240470016}
   m_Layer: 0
   m_Name: Crate (8)
   m_TagString: Untagged
@@ -1835,6 +1948,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1240470016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1240470011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d41019d54dc56c48097076c7c4a5b236, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Rewindable
+  position: 1
+  velocity: 1
+  animationState: 0
 --- !u!1 &1295959198
 GameObject:
   m_ObjectHideFlags: 0
@@ -1864,6 +1992,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2fd9cb6206974d17a61c54ca240c9b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItsRewindTime
+  maxRewindTime: 30
+  rewindSpeed: 4
 --- !u!4 &1295959200
 Transform:
   m_ObjectHideFlags: 0
@@ -1891,6 +2021,7 @@ GameObject:
   - component: {fileID: 1315614865}
   - component: {fileID: 1315614864}
   - component: {fileID: 1315614863}
+  - component: {fileID: 1315614867}
   m_Layer: 0
   m_Name: Crate (6)
   m_TagString: Untagged
@@ -2045,6 +2176,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1315614867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1315614862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d41019d54dc56c48097076c7c4a5b236, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Rewindable
+  position: 1
+  velocity: 1
+  animationState: 0
 --- !u!1 &1507897236
 GameObject:
   m_ObjectHideFlags: 0
@@ -2057,6 +2203,7 @@ GameObject:
   - component: {fileID: 1507897239}
   - component: {fileID: 1507897238}
   - component: {fileID: 1507897237}
+  - component: {fileID: 1507897241}
   m_Layer: 0
   m_Name: Crate (2)
   m_TagString: Untagged
@@ -2211,6 +2358,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1507897241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1507897236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d41019d54dc56c48097076c7c4a5b236, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Rewindable
+  position: 1
+  velocity: 1
+  animationState: 0
 --- !u!1 &1713786347
 GameObject:
   m_ObjectHideFlags: 0
@@ -2223,6 +2385,7 @@ GameObject:
   - component: {fileID: 1713786350}
   - component: {fileID: 1713786349}
   - component: {fileID: 1713786348}
+  - component: {fileID: 1713786352}
   m_Layer: 0
   m_Name: Crate (3)
   m_TagString: Untagged
@@ -2377,6 +2540,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1713786352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1713786347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d41019d54dc56c48097076c7c4a5b236, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Rewindable
+  position: 1
+  velocity: 1
+  animationState: 0
 --- !u!1 &1785545683
 GameObject:
   m_ObjectHideFlags: 0
