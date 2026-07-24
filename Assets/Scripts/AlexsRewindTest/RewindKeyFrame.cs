@@ -1,4 +1,4 @@
-public struct KeyFrame
+public struct RewindKeyFrame
 {
     public float timeStamp;
     public RewindData[] rewindableData;

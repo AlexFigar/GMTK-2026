@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -13,9 +14,12 @@ public class ItsRewindTime : MonoBehaviour
 
 
     private float time;
-    private bool rewinding;
+    public bool rewinding;
     private Dictionary<ushort, Rewindable> rewindables = new();
     private ushort rewindableID = 0;
+
+    private List<RewindKeyFrame> keyframes = new();
+    private int keyFrameCount = 0;
 
     //References
     InputAction rewindAction;
@@ -23,7 +27,7 @@ public class ItsRewindTime : MonoBehaviour
     public ushort RegisterRewindable(Rewindable rewindable)
     {
         rewindableID++;
-        rewindables.Add(rewindableID,rewindable);
+        rewindables.Add(rewindableID, rewindable);
         return rewindableID;
     }
 
@@ -50,7 +54,7 @@ public class ItsRewindTime : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (rewindAction.ReadValue<float>() > 0 && rewindMetre > 0)
+        if (rewindAction.ReadValue<float>() > 0 && rewindMetre > 0 && keyframes.Count > 1)
         {
             rewinding = true;
         }
@@ -59,15 +63,54 @@ public class ItsRewindTime : MonoBehaviour
             rewinding = false;
         }
 
+        //ITS REWIND TIME
+        if (rewinding)
+        {
+            bool restored = false;
+            float rewindTime = Time.deltaTime * rewindSpeed;
+            time -= rewindTime;
+
+            while (!restored)
+            {
+                if (keyframes.Count < 1)
+                {
+                    restored = true;
+                }
+                RewindKeyFrame frame = keyframes.Last();
+
+                keyframes.Remove(frame);
+
+                if (frame.timeStamp < time)
+                {
+                    restored = true;
+                    foreach (RewindData item in frame.rewindableData)
+                    {
+                        rewindables[item.rewindID].RestoreRewindData(item);
+                    }
+                }
+            }
+        }
+
         if (!rewinding) time += Time.deltaTime;
     }
 
     void FixedUpdate()
     {
-        foreach (var item in rewindables)
+        RewindKeyFrame frame = new();
+
+        frame.timeStamp = time;
+        frame.rewindableData = new RewindData[rewindables.Count];
+
+        for (int i = 0; i < rewindables.Count; i++)
         {
-            var data = item.Value.GetRewindData();
+            Rewindable rewindable = rewindables.ElementAt(i).Value;
+            frame.rewindableData[i] = rewindable.GetRewindData();
         }
+
+        keyframes.Add(frame);
+        keyFrameCount ++;
+
+        Debug.Log("Frame Captured");
     }
 
     void OnDestroy()

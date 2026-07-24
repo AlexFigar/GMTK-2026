@@ -34,6 +34,10 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
+        if (ItsRewindTime.Instance.rewinding)
+        {
+            return;
+        }
         charController.Move(moveAction.ReadValue<Vector2>());
     }
 

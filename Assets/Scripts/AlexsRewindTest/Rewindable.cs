@@ -24,7 +24,7 @@ public class Rewindable : MonoBehaviour
 
     public void OnDestroy()
     {
-        if(ItsRewindTime.Instance) ItsRewindTime.Instance.DeRegisterRewindable(id);
+        if (ItsRewindTime.Instance) ItsRewindTime.Instance.DeRegisterRewindable(id);
     }
 
     public RewindData GetRewindData()
@@ -39,6 +39,23 @@ public class Rewindable : MonoBehaviour
         }
 
         return data;
+    }
+
+    public void RestoreRewindData(RewindData rewindData)
+    {
+        if (rewindData.rewindID != id)
+        {
+            Debug.LogError("Id mismatch");
+            return;
+        }
+
+        transform.position = new(rewindData.position.x, rewindData.position.y);
+
+        if (velocity)
+        {
+            rb.linearVelocity = rewindData.velocity;
+        }
+
     }
 }
 
