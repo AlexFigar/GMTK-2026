@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1233149941 &-4043385045537104056
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Impact_{-4043385045537104056}
+  m_AudioClip: {fileID: 8300000, guid: ae34319c2f14e448abb37d21c2dea399, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-3125882205009255552
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: WOODImpt_Wood Chop Wood Impact Axe Cutting_PSE_GEN_GNyFZ_{-3125882205009255552}
+  m_AudioClip: {fileID: 8300000, guid: 5fdaf7a8ac7bc4c47a3438b7ab0610f7, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1307931743 &6418180475301049370
+AudioRandomContainer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: CrateCollision
+  m_Volume: 0
+  m_Pitch: 0
+  m_AutomaticTriggerTime: 0
+  m_LoopCount: 1
+  m_VolumeRandomizationRange: {x: -3.404255, y: 0}
+  m_PitchRandomizationRange: {x: -459.5745, y: 357.44678}
+  m_AutomaticTriggerTimeRandomizationRange: {x: 0, y: 0}
+  m_LoopCountRandomizationRange: {x: 0, y: 0}
+  m_Elements:
+  - {fileID: -4043385045537104056}
+  - {fileID: -3125882205009255552}
+  - {fileID: 8854489828313852767}
+  m_AvoidRepeatingLast: 1
+  m_PlaybackMode: 2
+  m_TriggerMode: 0
+  m_AutomaticTriggerMode: 1
+  m_LoopMode: 2
+  m_VolumeRandomizationEnabled: 1
+  m_PitchRandomizationEnabled: 1
+  m_AutomaticTriggerTimeRandomizationEnabled: 0
+  m_LoopCountRandomizationEnabled: 0
+--- !u!1233149941 &8854489828313852767
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: WOODImpt_Wood Impact Foley_PSE_ODY5_A0FkH_{8854489828313852767}
+  m_AudioClip: {fileID: 8300000, guid: 71f6230e832e64e369d3d9aaeb028497, type: 3}
+  m_Volume: -4
+  m_Enabled: 1
