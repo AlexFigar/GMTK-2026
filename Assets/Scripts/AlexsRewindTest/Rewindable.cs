@@ -56,6 +56,8 @@ public class Rewindable : MonoBehaviour
         if (velocity)
         {
             rb.linearVelocity = rewindData.velocity;
+            rb.totalTorque = 0;
+            rb.angularVelocity = 0;
         }
 
     }

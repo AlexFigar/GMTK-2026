@@ -12,7 +12,7 @@ public class ItsRewindTime : MonoBehaviour
     [SerializeField] private float rewindSpeed = 4.0f; //How fast we traverse back through time
 
 
-    private float time;
+    public float time;
     public bool rewinding;
     private Dictionary<ushort, Rewindable> rewindables = new();
     private ushort rewindableID = 0;
