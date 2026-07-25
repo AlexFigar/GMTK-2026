@@ -4010,6 +4010,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5507776623587486645, guid: 533143ce3165c4bff82f83137749438f, type: 3}
+      propertyPath: destroyDelay
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5507776623587486645, guid: 533143ce3165c4bff82f83137749438f, type: 3}
+      propertyPath: destroyAfterPlay
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5507776623587486645, guid: 533143ce3165c4bff82f83137749438f, type: 3}
+      propertyPath: returnToDefaultDelay
+      value: 1.6
+      objectReference: {fileID: 0}
     - target: {fileID: 6871750491366680278, guid: 533143ce3165c4bff82f83137749438f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -13.890387
@@ -4052,7 +4064,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8874506180283752659, guid: 533143ce3165c4bff82f83137749438f, type: 3}
       propertyPath: m_Name
-      value: Crate 1
+      value: Campire Crate
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
