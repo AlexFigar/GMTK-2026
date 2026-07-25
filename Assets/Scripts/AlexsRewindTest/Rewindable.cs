@@ -32,6 +32,7 @@ public class Rewindable : MonoBehaviour
         RewindData data = new();
         data.rewindID = id;
         data.position = new float2(transform.position.x, transform.position.y);
+        data.rotation = transform.rotation.eulerAngles.z;
 
         if (velocity)
         {
@@ -50,6 +51,7 @@ public class Rewindable : MonoBehaviour
         }
 
         transform.position = new(rewindData.position.x, rewindData.position.y);
+        transform.rotation.eulerAngles.Set(0,0,rewindData.rotation);
 
         if (velocity)
         {
@@ -64,5 +66,6 @@ public struct RewindData
 {
     public ushort rewindID;
     public float2 position;
+    public float rotation;
     public float2 velocity;
 }

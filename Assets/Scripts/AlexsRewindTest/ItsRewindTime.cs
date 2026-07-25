@@ -54,7 +54,7 @@ public class ItsRewindTime : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (rewindAction.ReadValue<float>() > 0 && rewindMetre > 0 && keyframes.Count > 1)
+        if (rewindAction.ReadValue<float>() > 0 && rewindMetre > 0 && keyframes.Count > 0)
         {
             rewinding = true;
         }
@@ -72,9 +72,9 @@ public class ItsRewindTime : MonoBehaviour
 
             while (!restored)
             {
-                if (keyframes.Count < 1)
+                if (keyframes.Count == 0)
                 {
-                    restored = true;
+                    break;
                 }
                 RewindKeyFrame frame = keyframes.Last();
 
@@ -109,8 +109,7 @@ public class ItsRewindTime : MonoBehaviour
 
         keyframes.Add(frame);
         keyFrameCount ++;
-
-        Debug.Log("Frame Captured");
+        //Debug.Log("Frame Captured");
     }
 
     void OnDestroy()
