@@ -9,8 +9,7 @@ public class ItsRewindTime : MonoBehaviour
 
     [Header("Time manipulation")]
     [SerializeField] public float rewindMetre = 1.0f;
-    [SerializeField] private float maxRewindTime = 30.0f;
-    [SerializeField] private float rewindSpeed = 4.0f; //How 
+    [SerializeField] private float rewindSpeed = 4.0f; //How fast we traverse back through time
 
 
     private float time;
@@ -54,7 +53,7 @@ public class ItsRewindTime : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (rewindAction.ReadValue<float>() > 0 && rewindMetre > 0 && keyframes.Count > 0)
+        if (rewindAction.ReadValue<float>() > 0 && rewindMetre > 0 && keyframes.Count > 0 && time > 0)
         {
             rewinding = true;
         }
@@ -70,6 +69,8 @@ public class ItsRewindTime : MonoBehaviour
             float rewindTime = Time.deltaTime * rewindSpeed;
             time -= rewindTime;
 
+            if(time < 0) time = 0; //We cant have negative time;
+
             while (!restored)
             {
                 if (keyframes.Count == 0)
@@ -80,13 +81,15 @@ public class ItsRewindTime : MonoBehaviour
 
                 keyframes.Remove(frame);
 
-                if (frame.timeStamp < time)
+                if (frame.timeStamp <= time)
                 {
-                    restored = true;
+                    time = frame.timeStamp;
                     foreach (RewindData item in frame.rewindableData)
                     {
                         rewindables[item.rewindID].RestoreRewindData(item);
                     }
+                    CaptureKeyFrame();
+                    restored = true;
                 }
             }
         }
@@ -95,6 +98,11 @@ public class ItsRewindTime : MonoBehaviour
     }
 
     void FixedUpdate()
+    {
+        CaptureKeyFrame();
+    }
+
+    private void CaptureKeyFrame()
     {
         RewindKeyFrame frame = new();
 
@@ -108,8 +116,7 @@ public class ItsRewindTime : MonoBehaviour
         }
 
         keyframes.Add(frame);
-        keyFrameCount ++;
-        //Debug.Log("Frame Captured");
+        keyFrameCount++;
     }
 
     void OnDestroy()

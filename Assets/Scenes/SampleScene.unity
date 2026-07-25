@@ -916,9 +916,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   movementSpeed: 5
   jumpForce: 5
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 1
 --- !u!50 &575384068
 Rigidbody2D:
   serializedVersion: 5
@@ -2004,8 +2001,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItsRewindTime
   rewindMetre: 1
-  maxRewindTime: 30
+  maxRewindTime: 4
   rewindSpeed: 4
+  rewinding: 0
 --- !u!4 &1295959200
 Transform:
   m_ObjectHideFlags: 0
