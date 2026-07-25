@@ -1,5 +1,8 @@
-public struct RewindKeyFrame
+namespace AlexsRewindTest
 {
-    public float timeStamp;
-    public RewindData[] rewindableData;
+    public struct RewindKeyFrame
+    {
+        public float timeStamp;
+        public RewindData[] rewindableData;
+    }
 }
